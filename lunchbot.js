@@ -29,7 +29,7 @@ controller.hears(['hello', 'hi'], 'direct_message,direct_mention,mention', funct
     bot.reply(message, 'Hello World!');
 });
 
-controller.hears(['recommend'], 'direct_message,direct_mention,mention', function(bot, message) {
+controller.hears(['(.*)recommend(.*)'], 'direct_message,direct_mention,mention', function(bot, message) {
     var item = testData[Math.floor(Math.random() * testData.length)];
     bot.reply(message, 'I recommend: ' + item);
 });
