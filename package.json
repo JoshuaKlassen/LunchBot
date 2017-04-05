@@ -2,13 +2,20 @@
   "name": "lunchbot",
   "version": "1.0.0",
   "description": "A slack bot that recommends places to eat",
-  "main": "index.js",
+  "main": "lunchbot.js",
   "dependencies": {
-    "botkit": "^0.5.2"
+    "body-parser": "^1.15.2",
+    "botkit": "^0.5",
+    "dashbot": "0.7.4",
+    "debug": "^2.3.3",
+    "express": "^4.14.0",
+    "querystring": "^0.2.0",
+    "request": "^2.79.0",
+    "wordfilter": "^0.2.6"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node lunchbot.js"
   },
   "repository": {
     "type": "git",
